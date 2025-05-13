@@ -1,0 +1,282 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-container {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 2rem;
+}
+
+.hero-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.hero-container p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Stats Container */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    min-width: 120px;
+}
+
+.stat-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3498db;
+    display: block;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* Profile Card */
+.profile-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.profile-card h3 {
+    color: #3498db;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.detail-row {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.detail-label {
+    font-weight: bold;
+    width: 120px;
+    color: #2c3e50;
+}
+
+.detail-value {
+    color: #7f8c8d;
+}
+
+/* Action Buttons */
+.action-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.logout-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Links and Prompts */
+.login-prompt, .register-prompt {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #7f8c8d;
+}
+
+.login-prompt a, .register-prompt a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Alerts */
+.alert {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    background: white;
+    color: #3498db;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a58ca;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-right span {
+    margin-right: 10px;
+}
+
+.navbar-right button {
+    background-color: white;
+    color: #0a58ca;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero {
+    background: url("/images") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0a58ca;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.stats div {
+    text-align: center;
+}
